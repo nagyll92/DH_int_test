@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+.mainContainer {
+    height: 100%;
+}
+
+.messageWrapper {
+    height: calc(100% - 30px);
+    overflow: auto;
+    padding: 5px;
+}
+
+.bottomBar {
+    margin-top: 5px;
+}
+
+.sender {
+    font-weight: bold;
+}
+
+.message {
+    margin-bottom: 20px;
+}
+
+.message .received {
+    text-align: left;
+}
+
+.message.sent {
+    text-align: right;
+}
+
+.sender:after {
+    content: ":";
+}
+
+.formControl {
+    border: solid 1px black;
+    padding: 4px 5px;
+    margin: 0;
+}
+
+#clientName {
+    width: 250px;
+}
+
+#clientMessage {
+    width: calc(100% - 335px);
+    margin: 0 5px;
+
+}
+
+#submitMessage {
+    width: 60px;
+    background: none;
+    font-weight: bold;
+}
