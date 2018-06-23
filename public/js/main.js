@@ -6,9 +6,9 @@ class AppController {
         this.$Events = new Events(["testEvent"]);
     }
 
-    run(){
+    run() {
         console.log("App running...");
-        this.$Events.on("testEvent", (params)=>{
+        this.$Events.on("testEvent", (params) => {
             console.log("event emitted", params);
         });
     }
