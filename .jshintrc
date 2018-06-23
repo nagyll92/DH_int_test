@@ -1,0 +1,15 @@
+{
+  "esversion": 6,
+  "undef": true,
+  "unused": true,
+  "bitwise": true,
+  "eqeqeq": true,
+  "forin": true,
+  "notypeof": true,
+  "mocha": true,
+  "node": true,
+  "globals": {
+    "console": true,
+    "window": true
+  }
+}
