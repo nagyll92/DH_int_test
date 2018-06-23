@@ -10,6 +10,7 @@
   "node": true,
   "globals": {
     "console": true,
-    "window": true
+    "window": true,
+    "document": true
   }
 }

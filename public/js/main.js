@@ -1,17 +1,30 @@
-import Events from "./events.js";
+import Layout from "./layout.js";
+
+const $Layout = new Layout("form", "messagePlaceholder");
 
 class AppController {
     constructor() {
         console.log("App initialized...");
-        this.$Events = new Events(["testEvent"]);
+
     }
 
     run() {
-        console.log("App running...");
-        this.$Events.on("testEvent", (params) => {
-            console.log("event emitted", params);
+
+        $Layout.on("userNameChanged", (userName) => {
+            console.log("username change to ", userName);
         });
+
+
+        $Layout.renderLayout();
+
+        setTimeout(() => {
+            $Layout.displayMessage("message sent", false);
+            $Layout.displayMessage("messaged received", true, "AnotherBot");
+        }, 300);
+
+        console.log("App running...");
+
     }
 }
 
-window.main = new AppController();
+export default new AppController();

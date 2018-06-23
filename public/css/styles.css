@@ -32,8 +32,8 @@
     text-align: right;
 }
 
-.sender:after {
-    content: ":";
+.received .sender:after {
+    content: ": ";
 }
 
 .formControl {

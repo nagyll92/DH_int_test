@@ -68,7 +68,7 @@ class Events {
     /**
      * Fires the selected items using the specified payload
      * @param {string} eventName the name of the event to be fired
-     * @param {*} payload the payload of the event
+     * @param {*} [payload] the payload of the event
      */
     trigger(eventName, payload) {
         if (typeof this._events[eventName] === "undefined")

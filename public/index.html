@@ -3,11 +3,10 @@
     <meta charset="UTF-8">
     <title>DH Int Chat App</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script type="module" src="js/main.js"></script>
 </head>
 <body>
 <div class="mainContainer">
-    <div class="messageWrapper">
+    <div id="messagePlaceholder" class="messageWrapper">
         <p class="message received">
             <span class="sender">ChatBot001</span>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore enim, excepturi incidunt libero quos
@@ -24,15 +23,16 @@
             Thanks!
         </p>
     </div>
-    <div class="bottomBar">
-        <input id="clientName" class="formControl" type="text" value="Guest" placeholder="Your name..."/>
+    <div id="form" class="bottomBar" >
+        <!--<input id="clientName" class="formControl" type="text" value="Guest" placeholder="Your name..." />
         <input id="clientMessage" class="formControl" type="text" placeholder="Type your message here...">
-        <input id="submitMessage" class="formControl" type="button" value="Send">
+        <input id="submitMessage" class="formControl" type="button" value="Send">-->
     </div>
 </div>
 
 <script type="module">
-    window.main.run();
+    import appController from "/js/main.js";
+    appController.run();
 </script>
 </body>
 </html>
