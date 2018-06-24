@@ -156,15 +156,9 @@ class Layout extends Events {
 
     /**
      * Creates a form element using the provided configuration and event handler
-     * @param {Object} [config] The configuration of the form element
-     * @param {string} [config.id] the id of the form element (default: Date.now())
-     * @param {string} [config.class] the css class attribute of the form element (default: "")
-     * @param {string} [config.name] the name attribute of the form element (default: "")
-     * @param {string} [config.type] the type attribute of the form element (default: ""). It defines also the type of the assigned event handler
-     * @param {string} [config.value] the value attribute of the form element (default: "")
-     * @param {string} [config.placeholder] the placeholder attribute of the form element (default: "")
-     * @param {Function} [handler] the event handler to be attached to the form element.
-     * @return {Element} The form input DOM element
+     * @param {Object} config The configuration of the form element
+     * @param handler
+     * @return {Element}
      * @private
      */
     _createFormField(config = {
