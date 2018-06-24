@@ -2,37 +2,20 @@
 <head>
     <meta charset="UTF-8">
     <title>DH Int Chat App</title>
-    <script type="text/javascript" src="js/socket.io.min.js"></script>
+    <script type="text/javascript" src="js/lib/socket.io.min.js"></script>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 <div class="mainContainer">
     <div id="messagePlaceholder" class="messageWrapper">
-        <p class="message received">
-            <span class="sender">ChatBot001</span>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore enim, excepturi incidunt libero quos
-            recusandae similique? A
-        </p>
-        <p class="message sent">
-            Hi!
-        </p>
-        <p class="message received">
-            <span class="sender">ChatBot001</span> Autem fuga laudantium totam. Adipisci beatae incidunt quis suscipit. Illo quas quia
-            suscipit voluptatum!
-        </p>
-        <p class="message sent">
-            Thanks!
-        </p>
+
     </div>
     <div id="form" class="bottomBar" >
-        <!--<input id="clientName" class="formControl" type="text" value="Guest" placeholder="Your name..." />
-        <input id="clientMessage" class="formControl" type="text" placeholder="Type your message here...">
-        <input id="submitMessage" class="formControl" type="button" value="Send">-->
     </div>
 </div>
 
 <script type="module">
-    import appController from "./js/main.js";
+    import appController from "./js/AppController.js";
     appController.run();
 </script>
 </body>
