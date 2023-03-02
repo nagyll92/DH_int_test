@@ -31,7 +31,7 @@
     "coffescript": "0.0.1-security",
     "jsdoc": "^3.5.5",
     "jshint": "^2.9.5",
-    "mocha": "^5.2.0",
-    "nyc": "^12.0.2"
+    "mocha": "^10.2.0",
+    "nyc": "^15.1.0"
   }
 }
